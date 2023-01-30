@@ -14,7 +14,9 @@ const cofeeData: CoffeNav[] = [
 const NavBar: React.FC = () => {
   return (
     <Nav>
-      <Logo src={logo} />
+      <a href="/">
+        <Logo src={logo} />
+      </a>
       <ListMenu>
         {cofeeData.map((item) => {
           return <MenuItem href={item.link}>{item.title}</MenuItem>;
