@@ -37,7 +37,7 @@ export const ItemWrapper = styled.div`
 export const ItemImg = styled.img`
   width: 150px;
   height: 135px;
-  padding: 22px 35px 84px 33px;
+  padding: 22px 35px 84px 43px;
 `;
 
 export const ItemTitle = styled.h3`

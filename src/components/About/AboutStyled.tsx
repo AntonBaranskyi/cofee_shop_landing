@@ -38,5 +38,5 @@ export const AboutText = styled.p`
 
   color: #000000;
 
-  padding-bottom: 25px;
+  padding-bottom: 45px;
 `;
