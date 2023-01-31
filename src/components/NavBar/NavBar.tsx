@@ -1,6 +1,8 @@
 import { ListMenu, Logo, Nav, MenuItem } from "./NavBarStyled";
 import logo from "../../assets/Logo.svg";
 
+import uniqid from 'uniqid';
+
 interface CoffeNav {
   link: string;
   title: string;
@@ -19,7 +21,7 @@ const NavBar: React.FC = () => {
       </a>
       <ListMenu>
         {cofeeData.map((item) => {
-          return <MenuItem href={item.link}>{item.title}</MenuItem>;
+          return <MenuItem key={uniqid()} href={item.link}>{item.title}</MenuItem>;
         })}
       </ListMenu>
     </Nav>

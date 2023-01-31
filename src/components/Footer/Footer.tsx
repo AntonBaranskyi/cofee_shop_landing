@@ -7,6 +7,7 @@ import {
 } from "./FooterStyled";
 import logo from "../../assets/footer/Logo.svg";
 import { BeanImg } from "./FooterStyled";
+import uniqid from "uniqid";
 
 interface CoffeFooter {
   link: string;
@@ -26,7 +27,11 @@ const Footer: React.FC = () => {
 
         {footerData &&
           footerData.map(({ link, title }) => {
-            return <FooterItem href={link}>{title}</FooterItem>;
+            return (
+              <FooterItem key={uniqid()} href={link}>
+                {title}
+              </FooterItem>
+            );
           })}
       </FooterMenu>
 
