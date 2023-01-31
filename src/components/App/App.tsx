@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import SecondHeader from "../SecondHeader/SecondHeader";
 import SecondAbout from "../SecondAbout/SecondAbout";
 import SearchFilter from "../SearchFilter/SearchFilter";
+import CofeeList from "../CofeeList/CofeeList";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <SecondHeader/>
       <SecondAbout/>
       <SearchFilter/>
+      <CofeeList/>
+      <Footer/>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 61px;
 `;
 
 export const Text = styled.p`
@@ -46,4 +47,5 @@ export const FilterBtn = styled.button`
 
   width: 75px;
   height: 30px;
+  cursor: pointer;
 `;
