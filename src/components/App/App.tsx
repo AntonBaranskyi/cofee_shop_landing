@@ -1,6 +1,6 @@
-import Main from "../Main/Main";
-import About from "../About/About";
-import BestList from "../BestList/BestList";
+// import Main from "../Main/Main";
+// import About from "../About/About";
+// import BestList from "../BestList/BestList";
 import Footer from "../Footer/Footer";
 import SecondHeader from "../SecondHeader/SecondHeader";
 import SecondAbout from "../SecondAbout/SecondAbout";
@@ -17,7 +17,7 @@ export interface ICofeeList {
 }
 
 function App() {
-  const [cofeeData, setCofeeData] = useState<ICofeeList[]>([
+  const [cofeeData] = useState<ICofeeList[]>([
     {
       image: cofeeImg,
       title: "AROMISTICO Coffee 1 kg",
