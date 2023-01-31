@@ -7,5 +7,6 @@ export const Wrapper = styled.div`
     margin-bottom: 30px;
     width: 1200px;
     margin: 0 auto;
+    margin-left: 55px;
 
 `;

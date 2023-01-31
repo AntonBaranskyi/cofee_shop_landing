@@ -12,6 +12,7 @@ const btnData: IButton[] = [
   { name: "Brazil" },
   { name: "Columbia" },
   { name: "Kenya" },
+  {name : 'Reset'}
 ];
 
 interface Props {

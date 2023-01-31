@@ -90,6 +90,8 @@ function App() {
         return items.filter((item) => item.country === "Columbia");
       case "Kenya":
         return items.filter((item) => item.country === "Kenya");
+      case "Reset":
+        return items;
 
       default:
         return items;
