@@ -2,7 +2,7 @@ import { Wrapper } from "./CofeeListStyled";
 
 import CofeeListItem from "../CofeeListItem/CofeeListItem";
 import uniqid from "uniqid";
-import { ICofeeList } from "../App/App";
+import { ICofeeList } from "../pages/PageAbout/PageAbout";
 
 const CofeeList = ({ cofeeData }: any) => {
   return (

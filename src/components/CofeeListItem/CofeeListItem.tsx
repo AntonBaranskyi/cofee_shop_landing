@@ -5,7 +5,7 @@ import {
   ItemTitle,
   ItemWrapper,
 } from "./CofeeListItemStyled";
-import { ICofeeList } from "../App/App";
+import { ICofeeList } from "../pages/PageAbout/PageAbout";
 
 const CofeeListItem = ({ image, title, country, price }: ICofeeList) => {
   return (
