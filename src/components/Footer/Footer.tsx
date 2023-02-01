@@ -8,7 +8,7 @@ import {
 import logo from "../../assets/footer/Logo.svg";
 import { BeanImg } from "./FooterStyled";
 import uniqid from "uniqid";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface CoffeFooter {
   link: string;
@@ -24,18 +24,16 @@ const Footer: React.FC = () => {
   return (
     <FooterWrapper>
       <FooterMenu>
-        <a href="#">
+        <Link to="/">
           <FooterLogo src={logo} />
-        </a>
+        </Link>
 
         {footerData &&
-          footerData.map(({  title }) => {
+          footerData.map(({ title }) => {
             return (
-              <NavLink key={uniqid()} end  to={title === "Our cofee" ? "/about" : "/"}>
-                <FooterItem key={uniqid()} >
-                  {title}
-                </FooterItem>
-              </NavLink>
+              <Link key={uniqid()} to={title === "Our cofee" ? "/about" : "/"}>
+                <FooterItem key={uniqid()}>{title}</FooterItem>
+              </Link>
             );
           })}
       </FooterMenu>

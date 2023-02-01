@@ -1,7 +1,7 @@
 import MainPage from "../pages/MainPage/MainPage";
 import PageAbout from "../pages/PageAbout/PageAbout";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router";
 
 function App() {
