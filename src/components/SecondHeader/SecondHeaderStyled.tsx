@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   height: 230px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 72px;
 `;

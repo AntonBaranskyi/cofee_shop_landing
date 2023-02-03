@@ -11,7 +11,7 @@ export const ItemWrapper = styled.div`
   background: #ffffff;
   border-radius: 8px;
   filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
-  margin: 0 71px 60px 0;
+  margin: 0 91px 60px 0;
 `;
 
 export const ItemImg = styled.img`
