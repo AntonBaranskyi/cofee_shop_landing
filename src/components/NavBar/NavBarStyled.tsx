@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
+export const LinkBtn = styled(Link)`
+  text-decoration: none;
+  margin-top: 13px;
+
+`;
 export const Nav = styled.nav`
   display: flex;
   padding-top: 30px;
@@ -9,7 +16,7 @@ export const Logo = styled.img`
   position: relative;
   left: 85px;
   height: 50px;
-  top: 4px
+  top: 4px;
 `;
 
 export const ListMenu = styled.div`

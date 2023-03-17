@@ -6,6 +6,7 @@ import {
   ItemTitle,
   ItemWrapper,
 } from "./BestListStyled";
+import React from "react";
 import back from "../../assets/Our_best_back.png";
 import best1 from "../../assets/best_item1.png";
 import best2 from "../../assets/best_item2.png";
@@ -38,13 +39,16 @@ const bestData: IbestData[] = [
 ];
 
 const BestList: React.FC = () => {
+  const bestRef = React.useRef(null);
+
+ 
   return (
     <BestWrapper style={{ backgroundImage: `url(${back})` }}>
       <BestTitle>Our best</BestTitle>
       {bestData &&
         bestData.map(({ img, title, price }) => {
           return (
-            <ItemWrapper>
+            <ItemWrapper ref = {bestRef} >
               <ItemImg src={img} />
               <ItemTitle>{title}</ItemTitle>
               <ItemPrice>{price + `$`}</ItemPrice>

@@ -32,6 +32,8 @@ export const ItemWrapper = styled.div`
   margin: 70px;
 
   margin-bottom: 90px;
+
+  cursor: pointer;
 `;
 
 export const ItemImg = styled.img`

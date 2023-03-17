@@ -5,6 +5,7 @@ import {
   FooterMenu,
   FooterWrapper,
 } from "./FooterStyled";
+import { LinkBtn } from "../NavBar/NavBarStyled";
 import logo from "../../assets/footer/Logo.svg";
 import { BeanImg } from "./FooterStyled";
 import uniqid from "uniqid";
@@ -31,9 +32,13 @@ const Footer: React.FC = () => {
         {footerData &&
           footerData.map(({ title }) => {
             return (
-              <Link key={uniqid()} to={title === "Our cofee" ? "/about" : "/"}>
+              <LinkBtn
+                style={{ marginTop: "26px" }}
+                key={uniqid()}
+                to={title === "Our cofee" ? "/about" : "/"}
+              >
                 <FooterItem key={uniqid()}>{title}</FooterItem>
-              </Link>
+              </LinkBtn>
             );
           })}
       </FooterMenu>

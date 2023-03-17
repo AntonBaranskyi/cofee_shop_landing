@@ -1,6 +1,7 @@
 import { ListMenu, Logo, Nav, MenuItem } from "./NavBarStyled";
 import logo from "../../assets/Logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { LinkBtn } from "./NavBarStyled";
 
 import uniqid from "uniqid";
 
@@ -17,15 +18,18 @@ const cofeeData: CoffeNav[] = [
 const NavBar: React.FC = () => {
   return (
     <Nav>
-      <NavLink to="/">
+      <Link to="/">
         <Logo src={logo} />
-      </NavLink>
+      </Link>
       <ListMenu>
         {cofeeData.map((item) => {
           return (
-            <NavLink end to={item.title === "Our cofee" ? "/about" : "/"}>
+            <LinkBtn
+              style={{ textDecoration: "none" }}
+              to={item.title === "Our cofee" ? "/about" : "/"}
+            >
               <MenuItem key={uniqid()}>{item.title}</MenuItem>
-            </NavLink>
+            </LinkBtn>
           );
         })}
       </ListMenu>
